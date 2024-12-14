@@ -1,0 +1,64 @@
+import json
+
+data = [
+    {
+        "question": "What is the syllabus for UPSC Prelims?",
+        "context": "The syllabus for the UPSC Prelims examination includes two papers: General Studies (Paper 1) and CSAT (Paper 2). Paper 1 covers topics such as Current Affairs, History, Geography, Polity, Economy, Environmental Studies, and Science & Technology. Paper 2, also known as CSAT, focuses on logical reasoning, quantitative aptitude, and comprehension.",
+        "answer": "The UPSC Prelims syllabus includes General Studies (Paper 1) and CSAT (Paper 2), covering topics like Current Affairs, History, Geography, Polity, Economy, and logical reasoning."
+    },
+    {
+        "question": "What is the eligibility criteria for UPSC Civil Services Examination?",
+        "context": "To be eligible for the UPSC Civil Services Examination, candidates must meet the following criteria: (1) Nationality: Indian for IAS, IPS, and IFS. (2) Age Limit: 21 to 32 years (with age relaxations for reserved categories). (3) Educational Qualification: A bachelor's degree from a recognized university.",
+        "answer": "Candidates must be Indian nationals, aged 21 to 32 years, with a bachelor's degree from a recognized university."
+    },
+    {
+        "question": "What is the pattern of the UPSC Mains examination?",
+        "context": "The UPSC Mains examination consists of nine papers, including one essay paper, four General Studies papers, two Optional Subject papers, and two qualifying language papers. Each paper is descriptive in nature, and the total marks for the Mains exam are 1750.",
+        "answer": "The UPSC Mains consists of nine descriptive papers, including General Studies, Optional Subjects, Essay, and qualifying language papers, totaling 1750 marks."
+    },
+    {
+        "question": "What are the optional subjects in the UPSC Mains?",
+        "context": "UPSC Mains allows candidates to choose one optional subject from a list of 48 subjects, including Anthropology, History, Geography, Political Science, Public Administration, Sociology, Literature of any one language, and others.",
+        "answer": "Candidates can choose one optional subject from a list of 48, such as Anthropology, History, Geography, Political Science, Sociology, and more."
+    },
+    {
+        "question": "What is the marking scheme for UPSC Prelims?",
+        "context": "UPSC Prelims includes two objective papers: General Studies (200 marks) and CSAT (200 marks). Each correct answer in General Studies earns 2 marks, while incorrect answers result in a penalty of 1/3rd of the marks for that question.",
+        "answer": "The Prelims include two papers of 200 marks each. General Studies awards 2 marks for correct answers, with a 1/3rd penalty for incorrect answers."
+    },
+    {
+        "question": "When is the UPSC notification released each year?",
+        "context": "The UPSC notification is generally released in February every year. It includes details such as exam dates, application process, syllabus, and eligibility criteria.",
+        "answer": "The UPSC notification is usually released in February each year."
+    },
+    {
+        "question": "What are the best books for UPSC preparation?",
+        "context": "Some of the best books for UPSC preparation include NCERT textbooks (6th to 12th), Laxmikanth for Indian Polity, Spectrum for Modern History, GC Leong for Geography, and Ramesh Singh for Economics. For current affairs, refer to newspapers like 'The Hindu' or 'Indian Express' and magazines like 'Yojana' and 'Kurukshetra'.",
+        "answer": "Recommended books include NCERTs, Laxmikanth for Polity, Spectrum for Modern History, GC Leong for Geography, and Ramesh Singh for Economics."
+    },
+    {
+        "question": "What is the age limit for the UPSC exam?",
+        "context": "The age limit for the UPSC Civil Services Examination is 21 to 32 years for the General category. Age relaxation applies for reserved categories: OBC (3 years), SC/ST (5 years), and PwD (10 years).",
+        "answer": "The age limit is 21 to 32 years for General candidates, with age relaxations for OBC (3 years) and SC/ST (5 years)."
+    },
+    {
+        "question": "How many attempts are allowed for the UPSC exam?",
+        "context": "The number of attempts allowed for the UPSC Civil Services Examination varies by category: General - 6 attempts, OBC - 9 attempts, SC/ST - unlimited attempts (until the age limit).",
+        "answer": "General candidates are allowed 6 attempts, OBC candidates 9 attempts, and SC/ST candidates unlimited attempts within the age limit."
+    },
+    {
+        "question": "What are the main stages of the UPSC exam?",
+        "context": "The UPSC exam is conducted in three stages: (1) Prelims: Objective-type questions. (2) Mains: Descriptive-type questions. (3) Interview: Personality Test conducted by the UPSC board.",
+        "answer": "The UPSC exam has three stages: Prelims (objective), Mains (descriptive), and Interview (personality test)."
+    },
+    {
+        "question": "What is the role of current affairs in UPSC preparation?",
+        "context": "Current affairs play a crucial role in UPSC preparation, especially in Prelims (General Studies) and Mains (General Studies Papers 2 and 3). Candidates should focus on national and international news, government policies, and social and economic issues.",
+        "answer": "Current affairs are important for Prelims and Mains, covering national/international news, policies, and socio-economic issues."
+    }
+]
+
+with open('upsc_dataset.json', 'w') as file:
+    json.dump(data, file, indent=4)
+
+print("Dataset saved as upsc_dataset.json")
